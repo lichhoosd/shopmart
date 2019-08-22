@@ -1,0 +1,36 @@
+2019-08-22 21:40:47.505 +07:00 [Warning] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-08-22 21:40:47.556 +07:00 [Warning] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-08-22 21:40:47.567 +07:00 [Warning] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-08-22 21:40:47.567 +07:00 [Warning] The CORS protocol does not allow specifying a wildcard (any) origin and credentials at the same time. Configure the policy by listing individual origins if credentials needs to be supported.
+2019-08-22 21:40:49.858 +07:00 [Error] General Error
+Twilio.Exceptions.ApiException: Authenticate
+   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Rest.Api.V2010.Account.MessageResource.Create(CreateMessageOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Api.V2010.Account.MessageResource.Create(PhoneNumber to, String pathAccountSid, PhoneNumber from, String messagingServiceSid, String body, List`1 mediaUrl, Uri statusCallback, String applicationSid, Nullable`1 maxPrice, Nullable`1 provideFeedback, Nullable`1 validityPeriod, Nullable`1 forceDelivery, Nullable`1 smartEncoded, String interactiveData, Nullable`1 forceOptIn, ITwilioRestClient client)
+   at Orient.Base.Net.Core.Api.Core.Common.Helpers.SMSHelper.SendMessage(String text, String to) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Core\Common\Helpers\SMSHelper.cs:line 18
+   at Orient.Base.Net.Core.Api.Core.Business.Services.UserService.RegisterAsync(UserRegisterModel userRegisterModel) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Core\Business\Services\UserService.cs:line 147
+   at Orient.Base.Net.Core.Api.Controllers.SSOController.Register(UserRegisterModel userRegisterModel) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Controllers\SSOController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2019-08-22 21:40:49.859 +07:00 [Error] General Error
+Twilio.Exceptions.ApiException: Authenticate
+   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Rest.Api.V2010.Account.MessageResource.Create(CreateMessageOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Api.V2010.Account.MessageResource.Create(PhoneNumber to, String pathAccountSid, PhoneNumber from, String messagingServiceSid, String body, List`1 mediaUrl, Uri statusCallback, String applicationSid, Nullable`1 maxPrice, Nullable`1 provideFeedback, Nullable`1 validityPeriod, Nullable`1 forceDelivery, Nullable`1 smartEncoded, String interactiveData, Nullable`1 forceOptIn, ITwilioRestClient client)
+   at Orient.Base.Net.Core.Api.Core.Common.Helpers.SMSHelper.SendMessage(String text, String to) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Core\Common\Helpers\SMSHelper.cs:line 18
+   at Orient.Base.Net.Core.Api.Core.Business.Services.UserService.RegisterAsync(UserRegisterModel userRegisterModel) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Core\Business\Services\UserService.cs:line 147
+   at Orient.Base.Net.Core.Api.Controllers.SSOController.Register(UserRegisterModel userRegisterModel) in D:\IT\Project\ShopMart\Orient.Base.Net.Core.Api\Controllers\SSOController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
